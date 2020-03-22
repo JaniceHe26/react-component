@@ -2,8 +2,10 @@ import React from "react";
 
 const Thumbnail = props => (
   <>
-    <img className="mainImage" scr={props.mainPicture} />
-    <img className="hoverImage" src={props.hoverPicture} />
+  <div>
+    <img className="mainImage" src={props.mainPicture} alt="main" />
+    <img className="hoverImage" src={props.hoverPicture} alt="hover" />
+  </div>
   </>
 );
 
