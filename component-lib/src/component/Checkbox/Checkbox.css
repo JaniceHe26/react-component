@@ -1,0 +1,41 @@
+/* Taken from http://jsfiddle.net/5g3w32ug/ */
+
+
+input[type="checkbox"]::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  vertical-align: -25%;
+  height: 2ex;
+  width: 2ex;
+  background-color:white;
+  border: 1px solid rgb(166, 166, 166);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+  margin-right: 0.5em;
+}
+input[type="checkbox"]:checked:before{
+  background: black;
+}
+
+input[type="checkbox"]::after {
+  display:hidden;
+}
+
+input[type="checkbox"]:checked:after {
+  content: '';
+  position: absolute;
+  width: .9ex;
+  height: 0.3ex;
+  background: rgba(0, 0, 0, 0);
+  top: 2.2ex;
+  left: 2.1ex;
+  border: 1px solid white;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

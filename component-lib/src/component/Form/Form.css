@@ -1,0 +1,23 @@
+label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px
+}
+
+.form-small {
+  padding: 3px 10px;
+  width: 300px;
+  height: 28px;
+}
+
+.form-medium {
+  padding: 3px 10px;
+  width: 300px;
+  height: 38px;
+}
+
+.form-large {
+  padding: 3px 10px;
+  width: 300px;
+  height: 48px;
+}
